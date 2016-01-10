@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+  </head>
+
+  <body ng-app="estudiantecr">
+    <nav>
+      <div class="nav-wrapper">
+        <span class="brand-logo center">Logo</span>
+      </div>
+    </nav>
+    <ul class="tabs">
+      <li class="tab col s3"><a class="active" href="#test1">News</a></li>
+      <li class="tab col s3"><a href="#test2">Bus</a></li>
+      <li class="tab col s3"><a href="#test3">Food</a></li>
+      <li class="tab col s3"><a href="#test4">Calendar</a></li>
+    </ul>
+    <div id="test1" class="col s12" ui-view="news"></div>
+    <div id="test2" class="col s12" ui-view="bus"></div>
+    <div id="test3" class="col s12" ui-view="food"></div>
+    <div id="test4" class="col s12" ui-view="calendar"></div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+
+
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
