@@ -1,0 +1,15 @@
+@import 'variables.scss';
+nav {
+	background: $estudiantecr-main-blue;
+}
+.tabs {
+	background: $estudiantecr-main-blue;
+	.tab {
+		a {
+			color: $estudiantecr-main-blue-text;
+		}
+	}
+	.indicator {
+		background: $estudiantecr-main-blue-text;
+	}
+}

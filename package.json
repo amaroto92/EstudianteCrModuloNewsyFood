@@ -1,0 +1,31 @@
+{
+  "name": "estudiantecr",
+  "version": "1.0.0",
+  "description": "estudiantecr",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.2.3",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "test": "gulp webserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/estudiantecr/web.git"
+  },
+  "keywords": [
+    "estudiantecr+"
+  ],
+  "author": "GoTouch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/estudiantecr/web/issues"
+  },
+  "homepage": "https://gitlab.com/estudiantecr/web#README"
+}
