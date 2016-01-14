@@ -7,13 +7,21 @@ var gulp = require('gulp'),
 	webserver = require('gulp-webserver');
 
 gulp.task('watch', function() {
-	watch('scss/index.scss', function () {
+	watch(['scss/index.scss', 'scss/variables.scss'], function () {
 		sass('scss/index.scss', {sourcemap: true, style: 'compact'})
 			.pipe(sourcemaps.init())
 			.pipe(postcss([ autoprefixer({ browsers: ['last 5 versions'] }) ]))
 			.pipe(sourcemaps.write('.'))
 			.pipe(gulp.dest('./css'));
 	});
+});
+
+gulp.task('sass:compile', function() {
+	sass('scss/index.scss', {sourcemap: true, style: 'compact'})
+		.pipe(sourcemaps.init())
+		.pipe(postcss([ autoprefixer({ browsers: ['last 5 versions'] }) ]))
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest('./css'));
 });
 
 gulp.task('webserver', function(){
@@ -23,4 +31,4 @@ gulp.task('webserver', function(){
 			open: true,
 			port: 8080
 		}));
-})
+});
