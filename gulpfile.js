@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	autoprefixer = require('autoprefixer'),
 	postcss = require('gulp-postcss'),
 	sass = require('gulp-ruby-sass'),
-	watch = require('gulp-watch');
+	watch = require('gulp-watch'),
+	webserver = require('gulp-webserver');
 
 gulp.task('watch', function() {
 	watch('scss/index.scss', function () {
@@ -14,3 +15,12 @@ gulp.task('watch', function() {
 			.pipe(gulp.dest('./css'));
 	});
 });
+
+gulp.task('webserver', function(){
+	gulp.src('.')
+		.pipe(webserver({
+			livereload: true,
+			open: true,
+			port: 8080
+		}));
+})
