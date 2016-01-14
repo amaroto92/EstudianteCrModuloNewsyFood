@@ -7,11 +7,9 @@ Installation
 ------------
 To install the EstudianteCR/WEB:
 
-1. Clone the repo
-- git clone https://gitlab.com/estudiantecr/web.git
-2. Install project's node & bower dependencies
-- npm install
-- bower install
+1. Clone the repo `git clone https://gitlab.com/estudiantecr/web.git`
+2. Install project's node dependencies `npm install`
+3. Install project's bower dependencies `bower install`
 
 Run
 ---
