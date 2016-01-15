@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	webserver = require('gulp-webserver');
 
-gulp.task('watch', function() {
+gulp.task('sass:watch', function() {
 	watch(['scss/index.scss', 'scss/variables.scss'], function () {
 		sass('scss/index.scss', {sourcemap: true, style: 'compact'})
 			.pipe(sourcemaps.init())

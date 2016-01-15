@@ -12,7 +12,8 @@ angular
 						templateUrl: 'modules/news/views/news.html'
 					},
 					"bus": {
-						templateUrl: 'modules/bus/views/bus.html'
+						templateUrl: 'modules/bus/views/bus.html',
+						controller: 'BusController'
 					},
 					"food": {
 						templateUrl: 'modules/food/views/food.html'
